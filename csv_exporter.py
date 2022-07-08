@@ -2,7 +2,7 @@ import csv
 
 class DataExporter:
    
-    def __init__(self, file_name='moving_avareage_stock.csv'):
+    def __init__(self, file_name='moving_average_stock.csv'):
          self.__file_name=file_name
 
 

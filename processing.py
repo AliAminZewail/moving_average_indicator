@@ -2,10 +2,10 @@
 class DataProcessing:
 
     def __init__(self):
-        self.__moving_avarage=[]
+        self.__moving_average=[]
         
 
-    def get_moving_avarage(self, close_price):
+    def get_moving_average(self, close_price):
         com_price=0
         operator=1
         
@@ -13,8 +13,8 @@ class DataProcessing:
             mov_avg=(cur_price+com_price)/operator
             operator+=1
             com_price+=cur_price
-            self.__moving_avarage.append([cur_day.date(),mov_avg])
-        return self.__moving_avarage
+            self.__moving_average.append([cur_day.date(),mov_avg])
+        return self.__moving_average
 
 
 
